@@ -1,5 +1,6 @@
 
 import "./globals.css";
+import Footer from '@components/layout/Footer';
 
 export default function RootLayout({
   children,
@@ -11,7 +12,7 @@ export default function RootLayout({
       <body>
         <h1>대충 레이아웃 Header</h1>
         {children}
-        <h1>대충 레이아웃 Footer</h1>
+        <Footer githubUrl="https://github.com/Hediar/portfolio-nextjs" />
       </body>
     </html>
   );
