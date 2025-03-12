@@ -1,6 +1,8 @@
 
 import "./globals.css";
 import Footer from '@components/layout/Footer';
+import Header from "@components/layout/Header";
+import { ThemeProvider } from "@/components/theme-provider";
 
 export default function RootLayout({
   children,
@@ -8,11 +10,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
-        <h1>대충 레이아웃 Header</h1>
-        {children}
-        <Footer githubUrl="https://github.com/Hediar/portfolio-nextjs" />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >        
+          <Header/>
+            {children}
+          <Footer githubUrl="https://github.com/Hediar/portfolio-nextjs" />
+        </ThemeProvider>
       </body>
     </html>
   );
