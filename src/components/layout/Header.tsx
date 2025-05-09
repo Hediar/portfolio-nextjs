@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import { ThemeToggleButton } from '../ui/ThemeToggleButton'
 
 const Header = () => {
   return (
@@ -10,6 +10,7 @@ const Header = () => {
       
       <div className="flex items-center gap-8">
         <nav className="hidden md:flex items-center gap-6">
+          <ThemeToggleButton/>
           <Link href="/about" className="text-gray-300 hover:text-black transition-colors">About</Link>
           <Link href="/projects" className="text-gray-300 hover:text-black transition-colors">Projects</Link>
           <Link href="/experience" className="text-gray-300 hover:text-black transition-colors">Experience</Link>
