@@ -47,12 +47,6 @@ export default function Home() {
           </p>
         </div>
         <div className="rounded-lg border p-5">
-          <h3 className="font-semibold">백엔드(계획)</h3>
-          <p className="mt-2 text-sm text-muted-foreground">
-            Spring 기반 인증/세션, Redis 캐시를 통한 성능 최적화
-          </p>
-        </div>
-        <div className="rounded-lg border p-5">
           <h3 className="font-semibold">협업/품질</h3>
           <p className="mt-2 text-sm text-muted-foreground">
             형상관리, 코드리뷰, 테스트 자동화 등 제품 품질 개선
